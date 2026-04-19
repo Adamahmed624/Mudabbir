@@ -1,0 +1,139 @@
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .sidebar_container {
+    padding: 0;
+    margin-right: 18px;
+    padding-block: 15px;
+  }
+
+  .sidebar_header_content h1 {
+    display: none;
+  }
+
+  .sidebar_logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sidebar_logo img {
+    width: 16px;
+  }
+
+  .sidebar_links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sidebar_links ul li span {
+    display: none;
+  }
+
+  .quick_actions span {
+    display: none;
+  }
+
+  .quick_actions .quick_actions_buttons button {
+    width: fit-content;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+
+  .main_section {
+    margin-right: 80px;
+  }
+
+  .second_part {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-rows: auto;
+  }
+
+  .analysis {
+    grid-area: 1/2/2/3;
+  }
+
+  .last_actions {
+    grid-area: 2/1/4/3;
+    min-height: fit-content;
+  }
+
+  .bills {
+    grid-area: 4/1/5/2;
+  }
+
+  .account_summary {
+    grid: 4/2/5/3;
+  }
+
+  .overview {
+    grid-area: 5/1/7/2;
+  }
+
+  .cards {
+    grid-area: 5/2/7/3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main_section {
+    margin-right: 0;
+  }
+
+  .main_container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .summary_cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .second_part {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, auto);
+    grid-template-rows: auto;
+  }
+
+  .recent_actions {
+    grid-area: 1/1/2/3;
+  }
+
+  .last_actions {
+    grid-area: 2/1/4/3;
+    min-height: fit-content;
+  }
+
+  .bills {
+    grid-area: 4/1/5/3;
+  }
+
+  .overview {
+    grid-area: 5/1/7/3;
+  }
+
+  .analysis {
+    grid-area: 7/1/8/3;
+  }
+
+  .account_summary {
+    grid-area: 8/1/9/3;
+  }
+
+  .cards {
+    grid-area: 9/1/11/3;
+  }
+}
